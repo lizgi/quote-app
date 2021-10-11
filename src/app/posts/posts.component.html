@@ -4,8 +4,8 @@
        <div *ngFor = 'let post of posts; let i=index'>
      <h5>{{post.title}}</h5>
      <p>{{post.description}}</p>
-    <a href ="" class ="btn btn-primary btn-sm btn-block">show details</a>
-    <app-post-detail></app-post-detail>
+    <a (click)="showDetails(i)" class ="btn btn-primary btn-sm btn-block">show details</a>
+    <app-post-detail *ngIf="post.showDescription" [posts]="post"></app-post-detail>
    </div>
   </div>
 </div>

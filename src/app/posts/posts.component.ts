@@ -15,6 +15,9 @@ export class PostsComponent implements OnInit {
   
   ]
 
+showDetails(index:number){
+  this.posts[index].showDescription=!this.posts[index].showDescription
+}
   constructor() { }
 
   ngOnInit(): void {
