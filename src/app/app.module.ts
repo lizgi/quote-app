@@ -7,12 +7,14 @@ import { HomeComponent } from './home/home.component';
 import { PostsComponent } from './posts/posts.component';
 import { PostDetailComponent } from './post-detail/post-detail.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     PostsComponent,
-    PostDetailComponent
+    PostDetailComponent,
+    
   ],
   imports: [
     BrowserModule,
