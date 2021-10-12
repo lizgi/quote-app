@@ -6,6 +6,9 @@
      <p>{{post.description}}</p>
     <a (click)="showDetails(i)" class ="btn btn-primary btn-sm btn-block">show details</a>
     <app-post-detail *ngIf="post.showDescription" [posts]="post"></app-post-detail>
-   </div>
+    <button id="like" class="btn btn-sm" (click)='upvote()'>{{post.upvote}}<i class="fa fa-thumbs-up"></button>
+    <button id="btn btn-sm" (click)='downvote()' id ="dislike">{{post.downvotes}}<i class="fa fa-thumbs-ddown"></button>
+    <button id="delete-post" class="btn btn-outline danger"(click)='deletepost(true)'>delete post</button>
+    </div>
   </div>
 </div>
